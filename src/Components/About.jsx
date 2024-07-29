@@ -3,7 +3,9 @@ import React from "react";
 function About() {
   return (
     <>
-      <div className="w-full p-20 pl-[3.5vw] bg-[#CDEA68] rounded-3xl text-black font-['Neue_Montreal']">
+      <div data-scroll
+      data-scroll-section
+      data-scroll-speed="-.1" className="w-full p-20 pl-[3.5vw] bg-[#CDEA68] rounded-t-3xl text-black font-['Neue_Montreal']">
         <h1 className=" pr-[9vw] text-[3.6vw] leading-[3.5vw]">
           Ochi is a strategic partner for fast-growing tech businesses that need
           to raise funds, sell products, explain complex ideas, and hire great
