@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="w-full flex gap-5 h-screen font-['Founders_Grotesk_X'] bg-zinc-900 px-14 py-12">
-      <div className='w-1/2 h-full flex flex-col justify-between '>
+      <div className="w-1/2 h-full flex flex-col justify-between ">
         <div className="heading">
           <h1 className="text-[10vw] font-semibold uppercase leading-none -mb-10 ">
             Eye-
@@ -46,22 +46,70 @@ function Footer() {
           presentations
         </h1>
         <div className="dets flex justify-between items-center mt-8 font-['Neue_Montreal']">
-            <div>
+          <div>
             <h3>S:</h3>
-            {["Instagram", "Behance", "Facebook", "LinkedIn"].map((items, index) =><a href="#" className="block text-md mt-1 underline font-light">{items}</a>)}
+            {["Instagram", "Behance", "Facebook", "LinkedIn"].map(
+              (items, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className="block text-md mt-1 underline font-light"
+                >
+                  {items}
+                </a>
+              )
+            )}
             <h3 className="mt-10">L:</h3>
-            {["202-1965 W 4th Ave", "Vancouver, Canada", "30 Chukarina St", "Lviv, Ukraine"].map((items, index) =><a href="#" className="block text-md mt-3 underline font-light">{items}</a>)}
+            {[
+              "202-1965 W 4th Ave",
+              "Vancouver, Canada",
+              "30 Chukarina St",
+              "Lviv, Ukraine",
+            ].map((items, index) => (
+              <a
+                key={index}
+                href="#"
+                className="block text-md mt-3 underline font-light"
+              >
+                {items}
+              </a>
+            ))}
             <h3 className="mt-10">E:</h3>
-            {["hello@ochi.design",].map((items, index) =><a href="#" className="block text-md underline font-light">{items}</a>)}
-            </div>
-            <div>
+            {["hello@ochi.design"].map((items, index) => (
+              <a
+                key={index}
+                href="#"
+                className="block text-md underline font-light"
+              >
+                {items}
+              </a>
+            ))}
+          </div>
+          <div>
             <h3 className="mt-10">M:</h3>
-            {["Home", "Services", "Our Work", "About Us", "Insights", "Contact Us"].map((items, index) =><a href="#" className="block text-md mt-1 underline font-light">{items}</a>)}
-            </div>
+            {[
+              "Home",
+              "Services",
+              "Our Work",
+              "About Us",
+              "Insights",
+              "Contact Us",
+            ].map((items, index) => (
+              <a
+                key={index}
+                href="#"
+                className="block text-md mt-1 underline font-light"
+              >
+                {items}
+              </a>
+            ))}
+          </div>
         </div>
         <div className="w-full mt-12 flex items-center justify-between font-['Neue_Montreal'] text-zinc-500">
-            <a href="#">© ochi design 2024. <u>Legal Terms</u></a>
-            <a href="#">Website by Obys</a>
+          <a href="#">
+            © ochi design 2024. <u>Legal Terms</u>
+          </a>
+          <a href="#">Website by Obys</a>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ function Marquee() {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed=".1"
+      data-scroll-speed=".01"
       className="w-full py-[17vh] rounded-t-3xl bg-[#004D43]"
     >
       <div className='text border-t-2 border-b-2 border-zinc-300 font-["Founders_Grotesk_X"]  flex whitespace-nowrap overflow-hidden'>

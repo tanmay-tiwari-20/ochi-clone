@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
+
 function Landing() {
   return (
     <div
@@ -28,7 +29,7 @@ function Landing() {
                     />
                   </motion.div>
                 )}
-                <h1 className="text-[9vw] leading-[.75] h-full uppercase  font-['Founders_Grotesk_X'] font-medium pt-[2vw] -mb-[1vw]">
+                <h1 className="text-[9vw] leading-[.75] h-full uppercase font-['Founders_Grotesk_X'] font-medium pt-[2vw] -mb-[1vw]">
                   {items}
                 </h1>
               </div>
@@ -41,19 +42,36 @@ function Landing() {
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((items, index) => (
-          <p key={index} className=" text-md font-light  leading-none">
+          <p key={index} className="text-md font-light leading-none">
             {items}
           </p>
         ))}
         <div className="start flex items-center gap-2">
-          <div className="px-4 py-[0.2vw] border-[1px] rounded-full uppercase  font-['Neue_Montreal'] font-extralight text-md border-zinc-500">
+          <motion.div
+            whileHover={{
+              scale: 1.01,
+              backgroundColor: "#ffffff",
+              color: "#000000",
+              transition: { duration: 0.3 },
+            }}
+            className="px-4 py-[0.2vw] border-[1px] rounded-full uppercase font-['Neue_Montreal'] font-extralight text-md border-zinc-500"
+          >
             start the project
-          </div>
-          <div className="w-8 h-8 flex items-center justify-center rounded-full border-[1px] border-zinc-500">
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "#ffffff",
+              color: "#000000",
+              rotate: 45,
+              transition: { duration: 0.3 },
+            }}
+            className="w-8 h-8 flex items-center justify-center rounded-full border-[1px] border-zinc-500"
+          >
             <span className="rotate-[45deg]">
               <IoIosArrowRoundUp size={"1.8rem"} />
             </span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
